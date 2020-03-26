@@ -1,136 +1,154 @@
 /************* BASE STYLES *************/
-* { box-sizing: border-box; }
-body { font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 1.4; color: #364147; margin: 0; }
-input, button { font-family: inherit; font-size: inherit; }
-a { color: #faa541; text-decoration: none; }
-ul { padding: 0; margin: 0; list-style: none; }
-nav { padding: 10px 0; }
-h1, h2, h3, h4, h5, h6 { margin: 0; }
 
-.container{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #364147;
+    margin: 0;
+}
+
+input, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+a {
+    color: #faa541;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
     margin: 0 auto 0 auto;
     max-width: 1170px;
-
 }
-section{
+
+section {
     display: flex;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
-
 }
 
-.flex-one{
+.flex-one {
     flex: 1;
-
 }
 
-.align-center{
+.align-center {
     align-items: center;
 }
 
-.center{
+.center {
     justify-content: center;
-
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
-.btn{
+.btn {
     cursor: pointer;
     border-style: none;
-    padding: 6px 12px; 
-    border-radius: 3px;   
+    padding: 6px 12px;
+    border-radius: 3px;
     line-height: 1.4;
     border: 0;
 }
 
-.btn-default{
+.btn-default {
     color: white;
     background-color: #faa541;
 }
 
-.btn-primary{
+.btn-primary {
     color: white;
     background-color: #364147;
 }
 
-.form-control{
+.form-control {
     display: block;
     padding: 6px 12px;
-    border-style: solid ;
+    border-style: solid;
     border-width: 1px;
     border-color: #a0a0a0;
     color: #8598a2;
     line-height: 1.4;
-
 }
 
-.text-light{
+.text-light {
     font-size: 30px;
     color: #a0a0a0;
-
 }
 
-.text-secondary{
+.text-secondary {
     font-size: 30px;
     color: #faa541;
-
 }
 
-.text-primary{
+.text-primary {
     font-size: 16px;
     color: #364147;
-
 }
 
-.header-nav{
+.header-nav {
     border-bottom: 1px #a0a0a0;
 }
 
-.brand{
+.brand {
     margin-left: -15px;
     margin-right: 60px;
     width: 170px;
     height: 85px;
-
 }
 
-.logo{
+.logo {
     max-width: 100%;
     height: auto;
-
 }
 
-
-.search-box{
+.search-box {
     width: 330px;
     height: 30px;
     padding: 6px 12px;
     border: 1px solid #a0a0a0;
 }
-.search-button{
+
+.search-button {
     background-color: #a0a0a0;
     color: #ffffff;
     height: 30px;
     width: 100px;
     border: 0;
     padding: 0;
-
 }
 
-.nav-list{
+.nav-list {
     padding-left: 0;
     width: 575px;
     margin-top: 10px;
-    
 }
 
 .nav-list li a {
@@ -138,29 +156,26 @@ section{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2px;
-    
 }
 
-.profile{
+.profile {
     margin-left: auto;
 }
 
-.account{
+.account {
     text-align: right;
     padding: 15px;
     color: #364147;
     font-size: 18px;
-
 }
 
-.account a{
+.account a {
     font-size: 14px;
 }
 
-.profile-pic{
+.profile-pic {
     height: 60px;
     width: 60px;
-
 }
 
 .profile-pic img {
@@ -168,7 +183,7 @@ section{
     max-width: 100%;
 }
 
-.hero{
+.hero {
     background-image: url('../img/hero.jpg');
     height: 400px;
     background-size: cover;
@@ -176,79 +191,71 @@ section{
     text-transform: uppercase;
 }
 
-.hero h1{
+.hero h1 {
     position: relative;
     left: -30px;
-
 }
 
-.hero h2{
+.hero h2 {
     color: #faa541;
 }
 
-.hero h1, .hero h2{
+.hero h1, .hero h2 {
     font-size: 63px;
     font-weight: 700;
     line-height: 0.9;
 }
 
-.hero p{
+.hero p {
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 21px;
     margin: 0 0 10px 0;
-
 }
 
-.banner{
+.banner {
     margin: 55px 15px;
     width: 100%;
     border-top: 1px solid #a0a0a0;
     border-bottom: 1px solid #a0a0a0;
     padding: 25px 0;
-
 }
 
-.banner img{
+.banner img {
     width: 250px;
-
 }
 
-.banner-text{
+.banner-text {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
-
 }
 
-.banner-text > div:last-child{
+.banner-text>div:last-child {
     font-size: 16px;
     font-weight: 400;
     margin-top: 5px;
-
 }
 
-.category{
+.category {
     flex: 0 0 25%;
     padding: 0 15px;
-
 }
 
 .category img {
     width: 100%;
 }
 
-.category-text{
+.category-text {
     color: #364147;
     padding: 30px 0;
     text-transform: uppercase;
     text-align: center;
-
 }
 
-.category-text > div{
+.category-text>div {
     font-size: 16px;
     font-weight: 200;
     color: #faa541;
@@ -259,4 +266,74 @@ section{
     font-weight: 700;
     line-height: 1;
 }
+
+.full-banner {
+    padding: 0 15px;
+    margin: 50px 0;
+    position: relative;
+}
+
+.full-banner:before {
+    content: "";
+    position: absolute;
+    border: 1px solid #ffffff;
+    top: 30px;
+    bottom: 30px;
+    left: 50px;
+    right: 50px;
+    z-index: 1;
+}
+
+.full-banner-image {
+    flex: 0 0 58.333333%;
+    background-image: url('../img/vista.jpg');
+    background-size: cover;
+    background-position: top center;
+    min-height: 400px;
+}
+
+.full-banner-sidebar {
+    flex: 0 0 41.666667%;
+    background-color: #364147;
+    text-transform: uppercase;
+    padding: 30px;
+    color: #ffffff;
+}
+
+.full-banner-sidebar h4 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+    color: #637f94;
+    line-height: 1;
+}
+
+.full-banner-sidebar h4:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #faa541;
+    margin: 20px auto;
+    display: block;
+}
+
+.full-banner-sidebar > div:nth-of-type(1) {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.full-banner-sidebar > div:nth-of-type(2) {
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.full-banner-sidebar .btn.btn-default {
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
 /***************************************/
